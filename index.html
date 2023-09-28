@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just a pic shop</title>
+    <link rel="stylesheet" href="a.css">
+    <script src="a.js"></script>
+    <script src="https://kit.fontawesome.com/b7457f805d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav">
+        <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="/the-website/index.html">About</a>
+            <a href="/contact/index.html">Contact</a>
+        </div>
+        <div class="dropdown">
+            <a href="/the-website/index.html">
+                <button class="button">About</button>
+            </a>
+        </div>
+        <div class="dropdown2">
+            <button class="button2" onclick="window.location.href='/drawings/index.html'">Drawings</button>
+            <div class="dropdown-content2">
+                <a href="/drawings/minimalistic/index.html">Minimalistic</a>
+                <a href="/drawings/realistic/index.html">Realistic</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button class="button3" onclick="window.location.href='/images'">Images</button>
+            <div class="dropdown-content3">
+                <a href="images/normal/index.html">Normal Cars</a>
+                <a href="images/classic/index.html">Classic Cars</a>
+                <a href="images/exotic/index.html">Exotic Cars</a>
+            </div>
+        </div>
+        <a class="login-button" href="login/index.html">
+            <i class="fa-solid fa-user"></i>
+        </a>
+        <a class="shopping-cart" href="#">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff; margin-right: 40px;"></i>
+        </a>
+        <a class="search">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff; margin-right: 40px"></i>
+        </a>
+    </div>
+    <br>
+    <b><h1 class="big-name" onclick="window.location.href='#'">Just A Pic Shop</h1></b>
+    <div class="container">
+        <div class="slideshow-container">
+            <div class="mySlides fade" style="display: block;">
+                <img src="pictures/6wfa6it9p83a1.jpg" style="width:100%">
+                <h3 class="thing">Automotive Photography</h3>
+                <a class="see-more" href="/images/index.html">
+                    <h3 class="ding">See More ></h3>
+                </a>
+            </div>
+            <div class="mySlides fade">
+                <img src="pictures/realistic/peakpx (12).jpg" style="width:100%">
+                <h3 class="thing2">Realistic Drawings</h3>
+                <a class="see-more" href="/drawings/realistic/index.html">
+                    <h3 class="ding">See More ></h3>
+                </a>
+            </div>
+            <div class="mySlides fade">
+                <img src="pictures/minimalistic/wallpaperflare.com_wallpaper (12).jpg" style="width:100%">
+                <h3 class="thing3">Minimalistic Drawings</h3>
+                <a class="see-more" href="/drawings/minimalistic/index.html">
+                    <h3 class="ding">See More ></h3>
+                </a>
+            </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <br>
+        <br>
+        <div class="pictures">
+            <img src="pictures/mhjoukvx7q581.png">
+            <img src="pictures/RDT_20210607_2038428393935103563440986.png">
+            <img src="pictures/RDT_20210607_2040536473696311819450686_edit_370525956818461.jpg">
+        </div>
+        <div class="footer">
+            <footer>
+                <div class="icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </div>
+                <p>Made by Khang</p>
+                <h6 class="gay">Thang is gay</h6>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

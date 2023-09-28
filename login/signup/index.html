@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just a pic shop</title>
+    <link rel="stylesheet" href="a.css">
+    <script src="https://kit.fontawesome.com/b7457f805d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="javascript:history.back()">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <a href="/">
+        <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+    </a>
+    <div class="a">
+        <div class="b">
+            <h1>Sign Up</h1>
+            <form>
+                <div class="text-field">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="text-field">
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="text-field">
+                    <input type="password" id="passwordc" required>
+                    <label>Re-enter your password</label>
+                </div>
+                <div class="text-box">
+                    <button class="button-30" onclick="signup(event)">Sign Up</button>
+                    <br>
+                    <a href="/login/index.html">Already have an account ?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        signup = (event) => {
+            event.preventDefault()
+            let password = document.getElementById("password").value;
+            let passwordc = document.getElementById("passwordc").value;
+            console.log(password)
+            console.log(passwordc)
+            if(password === "" || passwordc === ""){
+                alert("Enter your email and password");
+                return
+            }
+            if (password != passwordc){
+                alert("Password doesn't match");
+            }else{
+                alert("Signed up successfully");
+            }
+            
+            
+        }
+    </script>
+</body>
+</html>

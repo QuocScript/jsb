@@ -1,0 +1,336 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.nav{
+    background-color: rgb(26, 26, 26);
+    padding: 25px;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+}
+.button{
+    background-color: rgb(26, 26, 26);
+    color: azure;
+    border: none;
+    padding: 6px 12px;
+    margin-right: 4.5px;
+    font-size: 20px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+.dropdown-content > a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: gray;
+    border-radius: 5px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .button{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 5px;
+}
+.dropdown:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+.button:hover{
+    cursor: pointer;
+}
+
+
+.button2{
+    background-color: rgb(26, 26, 26);
+    color: azure;
+    border: none;
+    padding: 6px 12px;
+    margin-right: 4.5px;
+    font-size: 20px;
+}
+.dropdown2{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content2{
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+.dropdown-content2 > a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content2 a:hover{
+    background-color: gray;
+    border-radius: 5px;
+}
+.dropdown2:hover .dropdown-content2{
+    display: block;
+}
+.dropdown2:hover .button2{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 3px;
+}
+.dropdown2:not(:last-child) {
+    border-right: 1px solid #ddd;
+}
+.button2:hover{
+    cursor: pointer;
+}
+
+
+.button3{
+    background-color: rgb(26, 26, 26);
+    color: azure;
+    border: none;
+    padding: 6px 12px;
+    margin-right: 4.5px;
+    font-size: 20px;
+}
+.dropdown3{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content3{
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+.dropdown-content3 > a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content3 a:hover{
+    background-color: gray;
+    border-radius: 5px;
+}
+.dropdown3:hover .dropdown-content3{
+    display: block;
+}
+.dropdown3:hover .button3{
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 3px;
+}
+.button3:hover{
+    cursor: pointer;
+}
+
+
+
+.slideshow-container {
+    align-items: center;
+    max-width: 1000px;
+    position: initial;
+    margin: auto;
+    margin-top: 70px;
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 195px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: gray;
+}
+.next{
+    margin-left: 959px;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.content{
+    text-align: center;
+}
+.pictures{
+    display: none;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+span{
+    color: white;
+    margin-right: 30px;
+    font-size: 30px;
+}
+body{
+    background-color: rgb(250, 253, 243);
+}
+.footer{
+    padding: 80px;
+    background-color: black;
+    color: white;
+    text-align: center
+}
+.footer .icons{
+    font-size: 30px;
+}
+.thing{
+    position: absolute;
+    color: white;
+    margin-top: -340px;
+    text-shadow: 1px 1px #111;
+    margin-left: 400px;
+    border-radius: 5px;
+}
+.fa-solid{
+    margin: 15px;
+    color: white;
+    font-size: 20px;
+    float: right;
+}
+.login-button{
+    cursor: pointer;
+}
+.shopping-cart{
+    cursor: pointer;
+}
+.search{
+    cursor: pointer;
+}
+.thing2{
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px #111;
+    margin-top: -340px;
+    margin-left: 430px;
+}
+.thing3{
+    position: absolute;
+    color: white;
+    text-shadow: 1px 1px #111;
+    margin-top: -340px;
+    margin-left: 415px;
+}
+.ding{
+    position: absolute;
+    color: white;
+    margin-top: -290px;
+    border-style: solid;
+    text-shadow: 1px 1px #111;
+    padding: 0 10px 0 10px;
+    border-radius: 50px;
+    margin-left: 450px;
+}
+.see-more{
+    cursor: pointer;
+}
+.ding:hover{
+    color: rgb(184, 184, 184);
+}
+.big-name{
+    text-align: center;
+    font-size: 70px;
+    margin-top: 100px;
+}
+.gay{
+    font-size: 2px;
+    float: right;
+    display: none;
+}

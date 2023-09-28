@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just a pic shop</title>
+    <link rel="stylesheet" href="a.css">
+    <script src="https://kit.fontawesome.com/b7457f805d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <a href="javascript:history.back()">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <a href="/">
+        <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+    </a>
+    <div class="a">
+        <div class="b">
+            <h1>Sign In</h1>
+            <form>
+                <div class="text-field">
+                    <input type="email" id="email-login" required>
+                    <label>Email</label>
+                </div>
+                <div class="text-field">
+                    <input type="password" id="password-login" required>
+                    <label>Password</label>
+                </div>
+                <div class="text-box">
+                    <button onclick="login(event)" class="button-30">Sign In</button>
+                    <br>
+                    <a href="signup/index.html">Don't have an account ?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        login = (event) => {
+            event.preventDefault();
+            let emailvalue = document.getElementById("email-login").value;
+            let passwordvalue = document.getElementById("password-login").value;
+            console.log(emailvalue)
+            console.log(passwordvalue)
+            if (emailvalue === "" || passwordvalue === ""){
+                alert("Login Invalid");
+            }else{
+                alert("Login Successful");
+            }
+        }
+    </script>
+</body>
+</html>

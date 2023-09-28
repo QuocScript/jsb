@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just a pic shop</title>
+    <link rel="stylesheet" href="a.css">
+    <script src="a.js"></script>
+    <script src="https://kit.fontawesome.com/b7457f805d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav">
+        <span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/">Home</a>
+            <a href="/the-website/index.html">About</a>
+            <a href="/contact/index.html">Contact</a>
+        </div>
+        <div class="dropdown">
+            <a href="/the-website/index.html">
+                <button class="button">About</button>
+            </a>
+        </div>
+        <div class="dropdown2">
+            <button class="button2" onclick="window.location.href='/drawings/index.html'">Drawings</button>
+            <div class="dropdown-content2">
+                <a href="/drawings/minimalistic/index.html">Minimalistic</a>
+                <a href="/drawings/realistic/index.html">Realistic</a>
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button class="button3" onclick="window.location.href='/images/index.html'">Images</button>
+            <div class="dropdown-content3">
+                <a href="/images/normal/index.html">Normal Cars</a>
+                <a href="/images/classic/index.html">Classic Cars</a>
+                <a href="/images/exotic/index.html">Exotic Cars</a>
+            </div>
+        </div>
+        <a class="login-button" href="/login/index.html">
+            <i class="fa-solid fa-user"></i>
+        </a>
+        <a class="shopping-cart" href="#">
+            <i class="fa-solid fa-cart-shopping" style="color: #ffffff; margin-right: 40px;"></i>
+        </a>
+        <a class="search">
+            <i class="fa-solid fa-magnifying-glass" style="color: #ffffff; margin-right: 40px"></i>
+        </a>
+    </div>
+    <br>
+        <br>
+        <div class="content">
+            <h1 class="image-page-title">Drawings</h1>
+            <p class="image-page-p">Here you can find the best drawings on the internet</p>
+            <br>
+            <div class="container1">
+                <img id="image" class="mini" src="/pictures/minimalistic/wallpaperflare.com_wallpaper (1).jpg">
+                <h3 class="d">Minimalistic Drawings</h3>
+                <a class="buy-now" href="minimalistic/index.html">
+                    <h3 class="ding">Buy Now ></h3>
+                </a>
+            </div>
+            <div class="container2">
+                <img id="image" class="real" src="/pictures/realistic/peakpx.jpg">
+                <h3 class="d">Realistic Drawings</h3>
+                <a class="buy-now" href="realistic/index.html">
+                    <h3 class="ding">Buy Now ></h3>
+                </a>
+            </div>
+            <br>
+        </div>
+        <br>
+        <div class="footer">
+            <footer>
+                <div class="icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-discord"></i>
+                    <i class="fa-brands fa-square-facebook"></i>
+                </div>
+                <p>Made by Khang</p>
+            </footer>
+        </div>
+    </div>
+</body>
+<script>
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</html>
